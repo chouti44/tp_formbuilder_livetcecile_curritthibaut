@@ -1,30 +1,39 @@
 <?php
-    abstract class Element implements IElement {
-        private $type;
-        private $name;
+namespace FormBuilder;
 
-        public function getType() {
-            return $this->type;
-        }
+abstract class Element implements IElement{
+	/** declare var */
+	private $label;
+	private $name;
+	private $form;
 
-        public function setType(string $type) {
-            $this->type = $type;
-        }
+    //----- beginning get and setter of properties ---//
+    public function __construct($label, $name){
+		$this->setLabel($label);
+		$this->setName($name);
+	}
 
-        public function getName() {
-            return $this->name;
-        }
+	public function getLabel(){
+		return $this->label;
+	}
 
-        public function setName(string $name) {
-            $this->name = $name;
-        }
+	public function setLabel($label){
+		$this->label = $label;
+	}
 
-        public function create(){
+	public function getName(){
+		return $this->name;
+	}
 
-        }
+	public function setName($name){
+		$this->name = $name;
+	}
 
-        public function display() {
+	public function getForm(){
+		return $this->form;
+	}
 
-        }
-    }
-?>
+	public function setForm(Form $form){
+		$this->form = $form;
+	}
+}

@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
      class Textarea extends Element{
      	private $required;
 

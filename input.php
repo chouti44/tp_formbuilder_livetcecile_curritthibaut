@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
     class Input extends textarea
     {
     private $type; 
@@ -20,6 +21,6 @@
 	public function getType(){
 		return $this->type;
 	}
+=======
 
-    }
 ?>

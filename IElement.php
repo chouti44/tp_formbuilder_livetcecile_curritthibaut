@@ -1,6 +1,8 @@
 <?php
-    interface IElement {
-        public function create();
-        public function display();
-    }
-?>
+namespace FormBuilder;
+
+interface IElement{
+    // create signature
+    public function draw();
+
+}
