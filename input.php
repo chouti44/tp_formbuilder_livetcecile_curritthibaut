@@ -1,5 +1,6 @@
 <?php
-    class Input extends textarea{
+
+    class Input extends Textarea{
 
     }
 ?>

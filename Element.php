@@ -1,9 +1,14 @@
 <?php
+
     abstract class Element implements IElement {
+        // declare var
         private $type;
         private $name;
+        private $label;
+        private $form;
 
-        public function getType() {
+        //----- beginning get and setter of properties ---//
+        public function getType():string {
             return $this->type;
         }
 
@@ -11,7 +16,7 @@
             $this->type = $type;
         }
 
-        public function getName() {
+        public function getName():string {
             return $this->name;
         }
 
@@ -19,11 +24,25 @@
             $this->name = $name;
         }
 
-        public function create(){
-
+        public function getLabel():string {
+            return $this->label;
         }
 
-        public function display() {
+        public function setLabel(string $label) {
+            $this->name = $label;
+        }
+
+        public function getForm():string{
+            return $this->form;
+        }
+
+        public function setForm(Form $form){
+            $this->form = $form;
+        }
+        //----- finish get and setter of properties ---//
+
+        //---- function of interface ---//
+        public function create(){
 
         }
     }

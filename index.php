@@ -1,7 +1,9 @@
 <?php
-    require('Form.php');
+    require('header.php');
 
     $form = new Form('traitement.php', 'post');
+    $select = new Select('value', 'id');
+    // var_dump($form->setChamps($select));
 
 ?>
 <!doctype html>
@@ -15,7 +17,7 @@
 </head>
 <body>
 <?php
-    echo $form->display();
+   // echo $form->display();
 ?>
 </body>
 </html>
