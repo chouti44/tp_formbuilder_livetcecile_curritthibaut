@@ -1,12 +1,10 @@
 <?php
-<<<<<<< HEAD
      class Textarea extends Element{
      	private $required;
 
-     	public function __construct($label, $name, $$required = true)
-     	{
-		parent::__construct($label, $name);
-		$this->setRows($required);
+     	public function __construct($label, $name, $required = true) {
+		    parent::__construct($label, $name);
+		    $this->setRows($required);
 		}
 
 		public function draw()
@@ -19,12 +17,13 @@
 
      	public function getrequired()
     	{
-        return $this->$required;
+        return $this->required;
     	}
 
     	public function setrequired($required)
     	{
         $this->required= $required;
     	}
+
 }
 ?>
