@@ -1,5 +1,6 @@
 <?php
-    class IElement {
-
+    interface IElement {
+        public function create();
+        public function display();
     }
 ?>
